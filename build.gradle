@@ -18,9 +18,9 @@ android {
         minSdkVersion 16
     }
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "26.0.2"
 }
 
 dependencies {
-    compile 'com.stepleaderdigital.reveal:reveal:1.4.8'
+    compile 'com.stepleaderdigital.reveal:reveal:1.4.20'
 }
