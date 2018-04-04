@@ -4,15 +4,16 @@ import android.app.Application;
 import android.content.Context;
 
 import com.mparticle.MParticle;
+import com.mparticle.kits_core.ReportingMessage;
 import com.stepleaderdigital.reveal.Reveal;
 
 import java.util.List;
 import java.util.Map;
 
-public class RevealMobileKit extends KitIntegration {
+public class RevealMobileKit extends AbstractKitIntegration {
 
     @Override
-    protected List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
+    public List<ReportingMessage> onKitCreate(Map<String, String> settings, Context context) {
         Reveal revealSDK = Reveal.getInstance();
         String apiKey = settings.get("apiKey");
         String endpointBase = settings.get( "sdk_endpoint" );
