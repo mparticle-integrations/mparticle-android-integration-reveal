@@ -4,7 +4,7 @@ import android.app.Application;
 import android.content.Context;
 
 import com.mparticle.MParticle;
-import com.mparticle.kits_core.ReportingMessage;
+import com.mparticle.kits.core.ReportingMessage;
 import com.stepleaderdigital.reveal.Reveal;
 
 import java.util.List;
